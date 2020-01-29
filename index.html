@@ -253,75 +253,75 @@
 
     </footer>
 
-
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $('.js-slider').slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-});
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
 
 
-let $page = $('html, body');
-$('a[href*="#"]').click(function () {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 400);
-    return false;
-});
+        let $page = $('html, body');
+        $('a[href*="#"]').click(function () {
+            $page.animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 400);
+            return false;
+        });
 
-// navigation
+        // navigation
 
-$(document).ready(function () {
-    $(".nav-block__link").click(function () {
-        $('.nav-block__link').removeClass('active-link');
-        $(this).addClass('active-link');
-    });
-});
-
-
+        $(document).ready(function () {
+            $(".nav-block__link").click(function () {
+                $('.nav-block__link').removeClass('active-link');
+                $(this).addClass('active-link');
+            });
+        });
 
 
-// SLIDER-navi
 
-$(document).ready(function () {
-    $(".navi-slider__sircle").click(function () {
-        $('.navi-slider .active-link-scroll').removeClass('active-link-scroll');
-        $(this).addClass('active-link-scroll');
-    });
-});
 
-// nav
+        // SLIDER-navi
 
-$(document).ready(function () {
-    $(".nav-block__link").click(function () {
-        $('.nav-block__link').removeClass('active-link-navi');
-        $(this).addClass('active-link-navi');
-    });
-});
+        $(document).ready(function () {
+            $(".navi-slider__sircle").click(function () {
+                $('.navi-slider .active-link-scroll').removeClass('active-link-scroll');
+                $(this).addClass('active-link-scroll');
+            });
+        });
+
+        // nav
+
+        $(document).ready(function () {
+            $(".nav-block__link").click(function () {
+                $('.nav-block__link').removeClass('active-link-navi');
+                $(this).addClass('active-link-navi');
+            });
+        });
     </script>
 
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
 
 </html>
